@@ -7,22 +7,22 @@
   </head>
   <body>
     <script>
-      let name = "ipay";
-      let gajipoko = prompt("gajinya pengen berapa");
+      let nami = "ipay";
+      let gajipoko = 20000000;
 
       let tunjangan = 0.2 * gajipoko;
       let pjk = 0.15 * tunjangan;
       let gajibersih = gajipoko + tunjangan - pjk;
 
       document.write(
-        `nama karyawan : ${name}<br> tunjangan : ${tunjangan}<br> pajak : ${pjk} <br> gaji bersih: ${gajibersih} `
+        `nama karyawan : ${nami}<br> tunjangan : ${tunjangan}<br> pajak : ${pjk} <br> gaji bersih: ${gajibersih} `
       );
 
       // //no 2
 
-      let jam = prompt("berapa jam?");
-      let mnt = prompt("berapa menit?");
-      let dtk = prompt("berapa detik?");
+      let jam = 2;
+      let mnt = 50;
+      let dtk =30;
 
       let jamdtk = jam * 3600;
       let mntdtk = mnt * 60;
@@ -34,12 +34,12 @@
       //no 3
 
       let totalDetik = 3636;
-      let jam = Math.floor(totalDetik / 3600);
+      let hours = Math.floor(totalDetik / 3600);
       let sisaDetik = Math.floor(totalDetik % 3600);
       let menit = Math.floor(sisaDetik / 60);
       let detik = sisaDetik % 60;
 
-      console.log(${jam} JAM ${menit} menit ${detik} detik)
+      console.log(`${hours} JAM ${menit} menit ${detik} detik`)
     </script>
   </body>
 </html>
