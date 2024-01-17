@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let name = 'ipay';
+        let gajipoko= prompt("gajinya pengen berapa");
+
+        let tunjangan = 0.2 * gajipoko;
+        let pjk = 0.15 * tunjangan;
+        let gajibersih = gajipoko + tunjangan - pjk;
+
+        document.write(`nama karyawan : ${name}<br> tunjangan : ${tunjangan}<br> pajak : ${pjk} <br> gaji bersih: ${gajibersih} `)
+
+        // //no 2
+
+        let jam = prompt('berapa jam?');
+        let mnt = prompt('berapa menit?'); 
+        let dtk = prompt('berapa detik?');
+
+        let jamdtk = jam * 3600 ;
+        let mntdtk = mnt * 60 ;
+        let hangsil = jamdtk + mntdtk;
+        console.log(`jadi ${jam} jam ${mnt} menit ${dtk} detik sama dengan ${hangsil} detik `)
+
+        //no 3
+
+        let dtk = 3670;
+        
+        let clock = dtk / 3600;
+        let clock1 = Math.floor(clock);
+        let minute = dtk 
+    </script>
+</body>
+</html>

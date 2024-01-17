@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+    //no1
+    let jeruk = prompt("masukkan jumlah / kg")
+        let diskon = 5 / 100;
+        let harga = 5000;
+
+        let total = jeruk * harga;
+        let disc = total * diskon;
+        let bayar = total - disc;
+
+        document.write(`Harga sebenarnya adalah ${total} <br> mendapat diskon ${disc} <br> menjadi ${bayar} `);
+    //no2
+        let bilangan = 249;
+        let ratus = Math.floor(bilangan / 100)
+        let sisaratus = Math.floor((bilangan % 100)/10)
+        let satuan = bilangan %10;
+
+        console.log(`${ratus} bilangan ratusan ${sisaratus} bilangan puluhan ${satuan} bilangan satuan`)
+    //no3
+    let suhu =300;
+    let r = 5 / 9 *  suhu - 32;
+    if(r > 300){
+        sepuh = "panas";    
+    }
+    else if (r <250 && r > 300){
+        sepuh = "dingin";
+    }
+    else{
+        sepuh = "normal";
+    }
+
+    console.log(`suhu terkini = ${sepuh}`)
+    </script>
+  </body>
+</html>
