@@ -25,16 +25,16 @@
 
         console.log(`${ratus} bilangan ratusan ${sisaratus} bilangan puluhan ${satuan} bilangan satuan`)
     //no3
-    let suhu =300;
+    let suhu =100;
     let r = 5 / 9 *  suhu - 32;
     if(r > 300){
         sepuh = "panas";    
     }
-    else if (r <250 && r > 300){
-        sepuh = "dingin";
+    else if (r > 250 && r < 300){
+        sepuh = "normal";
     }
     else{
-        sepuh = "normal";
+        sepuh = "dingin";
     }
 
     console.log(`suhu terkini = ${sepuh}`)
