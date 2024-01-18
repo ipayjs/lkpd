@@ -8,107 +8,107 @@
   <body>
     <script>
       // no 1
-      // let pabp = 70;
-      // let mtk = 82;
-      // let dpk = 77;
+      let pabp = 70;
+      let mtk = 82;
+      let dpk = 77;
 
-      // let rata2 = (pabp + mtk + dpk) / 3;
+      let rata2 = (pabp + mtk + dpk) / 3;
 
-      // if (rata2 < 80 && rata2 > 100) {
-      //   grade = "A";
-      // } else if (rata2 < 75 && rata2 > 80) {
-      //   grade = "B";
-      // } else if (rata2 < 65 && rata2 > 75) {
-      //   grade = "C";
-      // } else if (rata2 < 45 && rata2 > 65) {
-      //   grade = "D";
-      // } else if (rata2 < 0 && rata2 > 45) {
-      //   grade = "E";
-      // } else {
-      //   grade = "K";
-      // }
+      if (rata2 < 80 && rata2 > 100) {
+        grade = "A";
+      } else if (rata2 < 75 && rata2 > 80) {
+        grade = "B";
+      } else if (rata2 < 65 && rata2 > 75) {
+        grade = "C";
+      } else if (rata2 < 45 && rata2 > 65) {
+        grade = "D";
+      } else if (rata2 < 0 && rata2 > 45) {
+        grade = "E";
+      } else {
+        grade = "K";
+      }
 
-      // console.log(`jadi grade nya adalah ${grade}`);
+      console.log(`jadi grade nya adalah ${grade}`);
 
       // // no 2
 
-      // let format = 13103200712; //no golongan gak boleh lebih dari 4
+      let format = 13103200712; //no golongan gak boleh lebih dari 4
 
-      // let g = Math.floor(format / 10000000000);
-      // let dd = Math.floor((format % 10000000000) / 100000000);
-      // let mm = Math.floor((format % 100000000) / 1000000);
-      // let yy = Math.floor((format % 1000000) / 100);
-      // let nn = Math.floor(format % 100);
+      let g = Math.floor(format / 10000000000);
+      let dd = Math.floor((format % 10000000000) / 100000000);
+      let mm = Math.floor((format % 100000000) / 1000000);
+      let yy = Math.floor((format % 1000000) / 100);
+      let nn = Math.floor(format % 100);
 
-      // if (g <= 1 && g >= 4) {
-      //   console.log(`${g} gak boleh lebih dari 4`);
-      // }
+      if (g <= 1 && g >= 4) {
+        console.log(`${g} gak boleh lebih dari 4`);
+      }
 
-      // switch (mm) {
-      //   case 1:
-      //     bulan = "januari";
-      //     break;
-      //   case 2:
-      //     bulan = "februari";
-      //     break;
-      //   case 3:
-      //     bulan = "maret";
-      //     break;
-      //   case 4:
-      //     bulan = "april";
-      //     break;
-      //   case 5:
-      //     bulan = "mei";
-      //     break;
-      //   case 6:
-      //     bulan = "juni";
-      //     break;
-      //   case 7:
-      //     bulan = "juli";
-      //     break;
-      //   case 8:
-      //     bulan = "agustus";
-      //     break;
-      //   case 9:
-      //     bulan = "september";
-      //     break;
-      //   case 10:
-      //     bulan = "oktober";
-      //     break;
-      //   case 11:
-      //     bulan = "november";
-      //     break;
-      //   case 12:
-      //     bulan = "december";
-      //     break;
-      // }
+      switch (mm) {
+        case 1:
+          bulan = "januari";
+          break;
+        case 2:
+          bulan = "februari";
+          break;
+        case 3:
+          bulan = "maret";
+          break;
+        case 4:
+          bulan = "april";
+          break;
+        case 5:
+          bulan = "mei";
+          break;
+        case 6:
+          bulan = "juni";
+          break;
+        case 7:
+          bulan = "juli";
+          break;
+        case 8:
+          bulan = "agustus";
+          break;
+        case 9:
+          bulan = "september";
+          break;
+        case 10:
+          bulan = "oktober";
+          break;
+        case 11:
+          bulan = "november";
+          break;
+        case 12:
+          bulan = "december";
+          break;
+      }
 
-      // console.log(`format = ${g} `);
-      // console.log(`tgl = ${dd}`);
-      // console.log(`bulan = ${bulan} ke ${mm} `);
-      // console.log(`tahun = ${yy}`);
-      // console.log(`nomor urut = ${nn}`);
+      console.log(`format = ${g} `);
+      console.log(`tgl = ${dd}`);
+      console.log(`bulan = ${bulan} ke ${mm} `);
+      console.log(`tahun = ${yy}`);
+      console.log(`nomor urut = ${nn}`);
 
       // no 3
       let hh = 23
-let mm = 59
+let mnt = 59
 let ss = 59
 let hasil =  ss + 1
 if(hasil > 59) {
     ss = 0
-    mm = mm + 1
-    if(mm > 59) {
-        mm = 0
+    mnt = mnt + 1
+    if(mnt > 59) {
+        mnt = 0
         hh = hh + 1
         if(hh > 23) {
             ss = 0
-            mm = 0
+            mnt = 0
             hh = 0
         }
     }
-    console.log(`${hh}jam ${mm} menit ${ss} detik`)
+    console.log(`${hh}jam ${mnt} menit ${ss} detik`)
 }else {
-    console.log(`${hh}jam ${mm} menit ${hasil} detik`)
+    console.log(`${hh}jam ${mnt} menit ${hasil} detik`)
 } 
      
     </script>
