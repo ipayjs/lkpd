@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //no 1
+      for (let a = 0; a <= 50; a++) {
+        document.write(`${a} <br>`);
+      }
+
+      // no 2
+      for (let b = 0; b <= 50; b++) {
+        if (b % 2 == 1) {
+          document.write(`${b} bilangan ganjil <br>`);
+        }
+      }
+
+      // no 3
+      for (let y = 0; y <= 50; y++) {
+        if (y % 2 == 0) {
+          document.write(`${y} bilangan genap <br>`);
+        }
+      }
+
+      // no 4
+      for (let x = 0; x <= 50; x++) {
+        if (x % 2 == 0) {
+          console.log(`${x} bilangan genap`);
+        } else {
+          console.log(x + " bilangan ganjil");
+        }
+      }
+
+      // no 5
+
+      let total = 0;
+      let bilanganTerbesar = -Infinity;
+      let bilanganTerkecil = Infinity;
+
+      for (let i = 1; i <= 20; i++) {
+        let bilangan = parseFloat(prompt(`Masukkan bilangan ke-${i}:`));
+        total += bilangan;
+
+        if (bilangan > bilanganTerbesar) {
+          bilanganTerbesar = bilangan;
+        }
+
+        if (bilangan < bilanganTerkecil) {
+          bilanganTerkecil = bilangan;
+        }
+      }
+
+      let rataRata = total / 20;
+      console.log(`Bilangan Terbesar: ${bilanganTerbesar}`);
+      console.log(`Bilangan Terkecil: ${bilanganTerkecil}`);
+      console.log(`Rata-rata: ${rataRata}`);
+    </script>
+  </body>
+</html>

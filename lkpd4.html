@@ -90,27 +90,26 @@
       console.log(`nomor urut = ${nn}`);
 
       // no 3
-      let hh = 23
-let mnt = 59
-let ss = 59
-let hasil =  ss + 1
-if(hasil > 59) {
-    ss = 0
-    mnt = mnt + 1
-    if(mnt > 59) {
-        mnt = 0
-        hh = hh + 1
-        if(hh > 23) {
-            ss = 0
-            mnt = 0
-            hh = 0
+      let hh = 23;
+      let mnt = 59;
+      let ss = 59;
+      let hasil = ss + 1;
+      if (hasil > 59) {
+        ss = 0;
+        mnt = mnt + 1;
+        if (mnt > 59) {
+          mnt = 0;
+          hh = hh + 1;
+          if (hh > 23) {
+            ss = 0;
+            mnt = 0;
+            hh = 0;
+          }
         }
-    }
-    console.log(`${hh}jam ${mnt} menit ${ss} detik`)
-}else {
-    console.log(`${hh}jam ${mnt} menit ${hasil} detik`)
-} 
-     
+        console.log(`${hh}jam ${mnt} menit ${ss} detik`);
+      } else {
+        console.log(`${hh}jam ${mnt} menit ${hasil} detik`);
+      }
     </script>
   </body>
 </html>
